@@ -7,4 +7,8 @@ email VARCHAR (100) UNIQUE,
 age INTEGER CHECK (age BETWEEN 0 AND 140),
 gender CHAR (1) CHECK (gender IN('M','F'))
 ) ;
+insert into users (user_name,email,age)
+values 
+("John Doe","johndoe@example.com",30),
+("Jane Smith","janesmith@example.com",25);
 
